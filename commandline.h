@@ -1,0 +1,11 @@
+void cd(int inpfd,int outfd,char * args[],char homedir[]);
+void pwd(int inpfd,int outfd);
+void echo(int inpfd,int outfd,char * args[]);
+void seperator(char * command,char homedir[]);
+void tokenizer(char * command,char homedir[]);
+void startProcess(int inpfd,int outfd,int flagbackground,char * args[]);
+void pinfo(int inpfd,int outfd,char * args[]);
+void pipetokenizer(int osc,int pfd[][2],char * command,int eachpipe,int pipe,char homedir[]);
+void bgjobs(int inpfd,int outfd);
+void killbgall();
+void sendsig(char * args[]);
